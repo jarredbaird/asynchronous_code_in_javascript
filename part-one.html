@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async - Part 1</title>
+  </head>
+  <body>
+    <form>
+      <h2>Favorite Number</h2>
+      <label for="fav-num-val">Your favorite number</label>
+      <input type="number" id="fav-num-val" name="fav-num" />
+      <button id="set-fav" type="submit">Set Favorite Number</button>
+    </form>
+    <form>
+      <h2 id="multi-form">Multiple Numbers</h2>
+      <span id="multi-span">
+        <label for="1">Number 1</label>
+        <input type="number" id="1" name="fav-num" />
+      </span>
+      <button id="add-field">+</button>
+      <button id="remove-field">-</button>
+      <button id="set-multi-num">Set Multiple Numbers</button>
+    </form>
+    <h3>Your Current Favorite Number</h3>
+    <h4 id="fav-num-cur">n/a</h4>
+    <button id="fav-facts-submit">Get 4 facts on your favorite Number</button>
+    <h3>Your Multiple Numbers</h3>
+    <h4>
+      <ul id="multi-num-cur">
+        <li>n/a</li>
+      </ul>
+    </h4>
+    <button id="multi-fact-submit">
+      Get all facts about your Multiple numbers
+    </button>
+    <h3>Facts About Your Favorite Number</h3>
+    <ul id="fav-list">
+      <li>n/a</li>
+    </ul>
+    <h3>Facts About Your Multiple Numbers</h3>
+    <ul id="multi-list">
+      <li>n/a</li>
+    </ul>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./part-one.js"></script>
+  </body>
+</html>
